@@ -1,1 +1,12 @@
+name: PerPlayerWorld
+author: Argantiu Development
+version: ${project.version}
+main: de.argantiu.perplayerworld.main
+api-version: 1.17
+depend: []
+softdepend: [ Vault, FastAsyncWorldEdit, PlaceholderAPI ]
 
+permissions:
+  pw.*:
+    default: op
+    children:
