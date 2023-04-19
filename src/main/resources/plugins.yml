@@ -34,5 +34,7 @@ permissions:
         pw.menu.mute: true
         pw.menu.unmute: true
   pw.stats.*:
-       default op
+       default: op
+       children:
+        pw.stats.perfomance
         
