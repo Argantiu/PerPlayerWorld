@@ -10,3 +10,20 @@ permissions:
   pw.*:
     default: op
     children:
+       pw.world.create: true
+       pw.world.delete: true
+       pw.world.settings: true
+       pw.world.build: true
+       pw.world.setowner: true
+  pw.player.*:
+     default: op
+     children:
+       pw.player.toggle.pvp: true
+       pw.player.toggle.damage: true
+       pw.player.worldchat: true
+  pw.online.*:
+      default: op
+      children:
+        pw.online.list: true
+        pw.online.pro: op
+        
