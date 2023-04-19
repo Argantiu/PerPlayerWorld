@@ -26,4 +26,13 @@ permissions:
       children:
         pw.online.list: true
         pw.online.pro: op
+  pw.menu.*:
+      default: op
+      children:
+        pw.menu.ban: true
+        pw.menu.unban: true
+        pw.menu.mute: true
+        pw.menu.unmute: true
+  pw.stats.*:
+       default op
         
