@@ -3,9 +3,14 @@ author: Argantiu Development
 version: ${project.version}
 main: de.argantiu.perplayerworld.main
 api-version: 1.17
-depend: []
 softdepend: [ Vault, FastAsyncWorldEdit, PlaceholderAPI ]
-
+commands:
+  perplayerworld:
+    description: PerPlayer world command
+    aliases:
+      - playerworld
+      - pw
+      - playworld
 permissions:
   pw.*:
     default: op
