@@ -41,5 +41,5 @@ permissions:
   pw.stats.*:
        default: op
        children:
-        pw.stats.perfomance
+        pw.stats: op
         
