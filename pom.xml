@@ -137,7 +137,7 @@
         <dependency>
             <groupId>com.google.code.gson</groupId> <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
             <artifactId>gson</artifactId>
-            <version>2.10.1/version>
+            <version>2.10.1</version>
         </dependency>
 
     </dependencies>
