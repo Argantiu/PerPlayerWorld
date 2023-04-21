@@ -1,0 +1,45 @@
+name: PerPlayerWorld
+author: Argantiu Development
+version: ${project.version}
+main: de.argantiu.perplayerworld.main
+api-version: 1.17
+softdepend: [ Vault, FastAsyncWorldEdit, PlaceholderAPI ]
+commands:
+  perplayerworld:
+    description: PerPlayer world command
+    aliases:
+      - playerworld
+      - pw
+      - playworld
+permissions:
+  pw.*:
+    default: op
+    children:
+       pw.world.create: true
+       pw.world.delete: true
+       pw.world.settings: true
+       pw.world.build: true
+       pw.world.setowner: true
+  pw.player.*:
+     default: op
+     children:
+       pw.player.toggle.pvp: true
+       pw.player.toggle.damage: true
+       pw.player.worldchat: true
+  pw.online.*:
+      default: op
+      children:
+        pw.online.list: true
+        pw.online.pro: op
+  pw.menu.*:
+      default: op
+      children:
+        pw.menu.ban: true
+        pw.menu.unban: true
+        pw.menu.mute: true
+        pw.menu.unmute: true
+  pw.stats.*:
+       default: op
+       children:
+        pw.stats: op
+        
