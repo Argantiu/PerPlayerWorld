@@ -114,12 +114,6 @@
             <groupId>com.fastasyncworldedit</groupId> <!-- https://ci.athion.net/job/FastAsyncWorldEdit/ -->
             <artifactId>FastAsyncWorldEdit-Core</artifactId>
             <version>2.6.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fastasyncworldedit</groupId>
-            <artifactId>FastAsyncWorldEdit-Core</artifactId>
-            <version>2.6.0</version>
             <scope>provided</scope>
         </dependency>
 
