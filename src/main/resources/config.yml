@@ -19,13 +19,18 @@ settings:
   globalchat: false
   commandcooldown: '3s'
 
+economy:
+  rental: false
+    # How much the player has to pay monthly
+    cost: 200.00
+
 templates:
   enabled: false
   # The worlds that you want to chose as a template (load that world in the folder next to your server worlds)
   worlds:
   - ThisWorldNameIsAExample
+  # The default template. Leave it empty for random templates
   default: 'ThisWorldNameIsAExample'
-
 
 
 # Here you can enable or disable commands
@@ -69,8 +74,8 @@ world:
       structures: true
       enddimension: false
       netherdimension: true
-      # Only generate one Biome: Biome ID or false
+      # Only generate one Biome: Biome ID or false (Won't work with custom generators)
       oneBiome: 'false'
-      # Set the world generator e.g. Slime World Manager, Terra, Terralith (already implemented)
-      #generators supported: 'default' 'flat' 'slimeworldmanager', 'terra', 'terralith'
+      # Set the world generator e.g. Slime World Manager, Terra, Iris, Terraform Generator, Better Structures
+      #generators supported: 'default' 'flat' 'slimeworldmanager', 'terra', 'iris', 'terraform', 'betterstructures'
       generator: 'default'
