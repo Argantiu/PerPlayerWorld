@@ -8,6 +8,42 @@ language: 'english'
 
 prefix: "&8[&bPerPlayerWorld&8]"
 
+settings:
+  # Allowing world owners to add players as operators
+  addworldop: true
+  # Allows world owners and admins to ban other players of thier world
+  punishments: true
+  menuworldlist: true
+  allowworldedit: false
+  chatformat: '[%world%] %formatplugin%'
+  globalchat: false
+  commandcooldown: '3s'
+
+templates:
+  enabled: false
+  # The worlds that you want to chose as a template (load that world in the folder next to your server worlds)
+  worlds:
+  - ThisWorldNameIsAExample
+  default: 'ThisWorldNameIsAExample'
+
+
+
+# Here you can enable or disable commands
+# If they are disabled they also won't show up in the tab searchbar
+commands:
+  world:
+    claimworld: true
+    setowner: true
+  punish:
+    report: true
+    ban: true
+    unban: true
+    mute: true
+    unmute: true
+
+##################
+# World settings #
+##################
 
 world:
 # Here you can set the default variables for the worlds,
@@ -23,35 +59,18 @@ world:
       place: true
       break: true
       interact: true
-
-  settings:
-      # Allowing world owners to add players as operators
-      addworldop: true
-      punishments: true
-      chatformat: '[%world%] %formatplugin%'
-      globalchat: false
-      commandcooldown: '3s'
+  
+  worldboarder:
+  - default: 500
+  - owner: 1000
       
   # The default generation if the player dosen't give other information.
   generation:
       structures: true
-      oneBiome: false
+      enddimension: false
+      netherdimension: true
+      # Only generate one Biome: Biome ID or false
+      oneBiome: 'false'
+      # Set the world generator e.g. Slime World Manager, Terra, Terralith (already implemented)
+      #generators supported: 'default' 'flat' 'slimeworldmanager', 'terra', 'terralith'
       generator: 'default'
-  
-  templates:
-      enabled: false
-      # The worlds that you want to chose as a template (load that world next to your server worlds)
-      worlds:
-      - ThisWorldNameIsAExample
-      default: 'ThisWorldNameIsAExample'
-
-menu:
-  worldlist: true
-  
-
-commands:
-  claimworld: true
-  ban: true
-  unban: true
-  mute: true
-  unmute: true
