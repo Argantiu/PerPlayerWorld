@@ -13,10 +13,16 @@ settings:
   addworldop: true
   # Allows world owners and admins to ban other players of thier world
   punishments: true
+  # Shows up a world menu with all public worlds shown
   menuworldlist: true
+  # Allowing operators and owners to use WorldEdit
   allowworldedit: false
+  # The World Chat format. Overwrites the format of other plugins.
+  # Add %formatplugin% to use the format of the global plugin format (Supports Essentials Chat, LPC and ChatManager)
   chatformat: '[%world%] %formatplugin%'
+  # Makes the chat globally
   globalchat: false
+  # A command cooldown to prefent spamming. e.g. '1h:10m:5s'
   commandcooldown: '3s'
 
 economy:
