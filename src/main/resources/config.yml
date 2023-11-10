@@ -1,15 +1,57 @@
-############################################
-### __              __         __    __  ### _____  _     
-### \ \            / /        / /   / /  ### \  __  \ \    
-###  \ \    __    / /___  ___/ /___/ /   ###  \ \__\ \ \     
-###   \ \  /  \  / / __ \/ _/ / __  /    ###   \  ___/\ \    /
-###    \ \/ /\ \/ / /_/ / // / /_/ /     ###    \ \    \ \___ \ 
-###     \__/  \__/\____/_//_/\__,_/      ###     \_\    \_____\\
-###                                      ###
-###                                      ###
-############################################
 # Per Player World - The ultimate world creator for your server
 
 ####################
 # General Settings #
 ####################
+
+language: 'english'
+
+prefix: "&8[&bPerPlayerWorld&8]"
+
+
+world:
+# Here you can set the default variables for the worlds,
+# however they can be changed if the player has the permission to that.
+  gamerules:
+      # Set the default difficulty: peaceful, easy, normal, hard, hardcore
+      difficulty: 'easy'
+      # Chose default gamemode: survival, creative or adventure
+      gamemode: 'survival'
+      chat: true
+      pvp: true
+      damage: true
+      place: true
+      break: true
+      interact: true
+
+  settings:
+      # Allowing world owners to add players as operators
+      addworldop: true
+      punishments: true
+      chatformat: '[%world%] %formatplugin%'
+      globalchat: false
+      commandcooldown: '3s'
+      
+  # The default generation if the player dosen't give other information.
+  generation:
+      structures: true
+      oneBiome: false
+      generator: 'default'
+  
+  templates:
+      enabled: false
+      # The worlds that you want to chose as a template (load that world next to your server worlds)
+      worlds:
+      - ThisWorldNameIsAExample
+      default: 'ThisWorldNameIsAExample'
+
+menu:
+  worldlist: true
+  
+
+commands:
+  claimworld: true
+  ban: true
+  unban: true
+  mute: true
+  unmute: true
