@@ -1,0 +1,101 @@
+# __________               __________.__                               __      __            .__       .___
+# \______   \ ___________  \______   \  | _____  ___.__. ___________  /  \    /  \___________|  |    __| _/
+#  |     ___// __ \_  __ \  |     ___/  | \__  \<   |  |/ __ \_  __ \ \   \/\/   /  _ \_  __ \  |   / __ | 
+#  |    |   \  ___/|  | \/  |    |   |  |__/ __ \\___  \  ___/|  | \/  \        (  <_> )  | \/  |__/ /_/ | 
+#  |____|    \___  >__|     |____|   |____(____  / ____|\___  >__|      \__/\  / \____/|__|  |____/\____ | 
+#                \/                            \/\/         \/               \/                         \/ 
+# PerPlayerworld - The ultimate player world manager for your server
+
+####################
+# General Settings #
+####################
+
+language: 'english'
+
+prefix: "&8[&bPerPlayerWorld&8]"
+
+settings:
+  # Allowing world owners to add players as operators
+  addworldop: true
+  # Allows world owners and admins to ban other players of thier world
+  punishments: true
+  # Shows up a world menu with all public worlds shown
+  menuworldlist: true
+  # Allowing operators and owners to use WorldEdit
+  allowworldedit: false
+  ### No need for Chat format, just auto apply chatformat.
+  # Makes the chat globally
+  globalchat: false
+  # A command cooldown to prefent spamming. e.g. '1h:10m:5s' #### What?! This is a world manager, not a chat manager.
+  #commandcooldown: '3s'
+
+economy: #### No. Just No. LuckPerms permissions are much better.
+  #rental: false
+    # How much the player has to pay monthly
+    #cost: 200.00
+
+templates:
+  enabled: false
+  # The worlds that you want to chose as a template (load that world in the folder next to your server worlds)
+  worlds:
+  - ThisWorldNameIsAExample
+  # The default template. Leave it empty for random templates
+  default: 'ThisWorldNameIsAExample'
+
+
+# Here you can enable or disable commands
+# If they are disabled they also won't show up in the tab searchbar
+commands:
+  world:
+    #claimworld: true ### Um... same as setowner.
+    setowner: true
+  punish: # What was this plugin to do again? Oh yes, a ban manager :| (As you can see: NO)
+    #report: true
+    ban: true
+    unban: true
+    #mute: true
+    #unmute: true
+
+##################
+# World settings #
+##################
+
+world:
+# Here you can set the default variables for the worlds,
+# however they can be changed if the player has the permission to that.
+  gamerules:
+      # Set the default difficulty: peaceful, easy, normal, hard, hardcore
+      difficulty: 'easy'
+      # Chose default gamemode: survival, creative or adventure
+      gamemode: 'survival'
+      # Well Well Well, a rule to block the chat? Disable cheats would fit here more.
+      chat: true 
+      pvp: true
+      damage: true 
+      place: true
+      break: true
+      interact: true
+  
+  worldboarder: # Just use LuckPerms.
+  #- default: 500
+  #- owner: 1000
+      
+  # The default generation if the player dosen't give other information.
+  generation:
+      structures: true
+      enddimension: false
+      netherdimension: true
+      # Only generate one Biome: Biome ID or false (Won't work with custom generators)
+      oneBiome: 'false'
+      # Set the world generator e.g. Slime World Manager, Terra, Iris, Terraform Generator, Better Structures
+      #generators supported: 'default' 'flat' 'slimeworldmanager', 'terra', 'iris', 'terraform'
+      generator: 'default'
+
+#   _____                    _ _            _      
+#  / ____|                  | | |          | |     
+# | |    _   _  ___ ___   __| | |_   _   __| | ___ 
+# | |   | | | |/ __/ _ \ / _` | | | | | / _` |/ _ \
+# | |___| |_| | (_| (_) | (_| | | |_| || (_| |  __/
+#  \_____\__, |\___\___/ \__,_|_|\__, (_)__,_|\___|
+#         __/ |                   __/ |            
+#        |___/                   |___/             
