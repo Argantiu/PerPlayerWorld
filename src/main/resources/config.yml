@@ -89,14 +89,14 @@ world:
       # Only generate one Biome: Biome ID or false (Won't work with custom generators)
       oneBiome: 'false'
       # Set the world generator e.g. Slime World Manager, Terra, Iris, Terraform Generator, Better Structures
-      #generators supported: 'default' 'flat' 'slimeworldmanager', 'terra', 'iris', 'terraform', 'betterstructures'
+      #generators supported: 'default' 'flat' 'slimeworldmanager', 'terra', 'iris', 'terraform'
       generator: 'default'
 
-   _____                    _ _            _      
-  / ____|                  | | |          | |     
- | |    _   _  ___ ___   __| | |_   _   __| | ___ 
- | |   | | | |/ __/ _ \ / _` | | | | | / _` |/ _ \
- | |___| |_| | (_| (_) | (_| | | |_| || (_| |  __/
-  \_____\__, |\___\___/ \__,_|_|\__, (_)__,_|\___|
-         __/ |                   __/ |            
-        |___/                   |___/             
+#   _____                    _ _            _      
+#  / ____|                  | | |          | |     
+# | |    _   _  ___ ___   __| | |_   _   __| | ___ 
+# | |   | | | |/ __/ _ \ / _` | | | | | / _` |/ _ \
+# | |___| |_| | (_| (_) | (_| | | |_| || (_| |  __/
+#  \_____\__, |\___\___/ \__,_|_|\__, (_)__,_|\___|
+#         __/ |                   __/ |            
+#        |___/                   |___/             
